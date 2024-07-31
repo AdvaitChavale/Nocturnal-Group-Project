@@ -1,0 +1,95 @@
+{% extends "base.html"%}
+{% block content %}
+
+<div class="testForm">
+    <form action="#" method="post" id="test-form">
+        <h2>Quiz</h2>
+        <div class="box">
+            <p>In a game of chess, how many squares does a knight touch with a single move?</p>
+            <div class="options">
+                <label for="">
+                    <input type="radio" name="q1" id="" value="A">4
+                </label>
+                <label for="">
+                    <input type="radio" name="q1" id="" value="B">6
+                </label>
+                <label for="">
+                    <input type="radio" name="q1" id="" value="C">8
+                </label>
+                <label for="">
+                    <input type="radio" name="q1" id="" value="D">12
+                </label>
+            </div>
+        </div>
+        <div class="box">
+            <p>2. If all Bloops are Razzies, and some Razzies are Lazzies, can you conclude that some Bloops are definitely Lazzies?</p>
+            <div class="options">
+                <label for="">
+                    <input type="radio" name="q2" id="" value="A">Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="q2" id="" value="B">No
+                </label>
+                <label for="">
+                    <input type="radio" name="q2" id="" value="C">Not enough information
+                </label>
+                <label for="">
+                    <input type="radio" name="q2" id="" value="D">K
+                </label>
+            </div>
+        </div>
+        <div class="box">
+            <p>3. Complete the series: 1, 4, 9, 16, ___</p>
+            <div class="options">
+                <label for="">
+                    <input type="radio" name="q3" id="" value="A">25
+                </label>
+                <label for="">
+                    <input type="radio" name="q3" id="" value="B">36
+                </label>
+                <label for="">
+                    <input type="radio" name="q3" id="" value="C">49
+                </label>
+                <label for="">
+                    <input type="radio" name="q3" id="" value="D">64
+                </label>
+            </div>
+        </div>
+        <div class="box">
+            <p>4. Which number logically belongs in the sequence: 2, 6, 12, 20, ___?</p>
+            <div class="options">
+                <label for="">
+                    <input type="radio" name="q4" id="" value="A">28
+                </label>
+                <label for="">
+                    <input type="radio" name="q4" id="" value="B">30
+                </label>
+                <label for="">
+                    <input type="radio" name="q4" id="" value="C">32
+                </label>
+                <label for="">
+                    <input type="radio" name="q4" id="" value="D">36
+                </label>
+            </div>
+        </div>
+        <div class="box">
+            <p>5. If you fold a piece of paper in half, and then fold it in half again, and continue this process 50 times, how thick will the stack of paper be (approximately) in relation to the original thickness of the paper?</p>
+            <div class="options">
+                <label for="">
+                    <input type="radio" name="q5" id="" value="A">Twice as thick
+                </label>
+                <label for="">
+                    <input type="radio" name="q5" id="" value="B">Thicker than the observable universe
+                </label>
+                <label for="">
+                    <input type="radio" name="q5" id="" value="C">About the same thickness
+                </label>
+                <label for="">
+                    <input type="radio" name="q5" id="" value="D">Half as thick
+                </label>
+            </div>
+        </div>
+    </form>
+    <a href="./congrats"><button style="margin-top: 2rem;" type="submit" value="submit">Submit</button></a>
+</div>
+{% endblock %}

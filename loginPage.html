@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+{% block content%}
+<!-- <div class="container">
+    <form action="login.php" method="POST">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="registration.html">Register here</a></p>
+</div> -->
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="#" method="post">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" name="username" required>
+                        <label for="">username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button type="submit" value="submit">Log in</button>
+                    <div class="register">
+                        <p>Don't have a account?<a href="/signup">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

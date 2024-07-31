@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="course-title">
+    <div class="name">{{value.title1}}</div>
+    <form action="/previous" method="post">
+        <input class="form-submit" type="submit" value="Previous">
+    </form>
+    <form action="/next" method="post">
+        <input class="form-next" type="submit" value="Next">
+    </form>
+    <div class="menu">Menu</div>
+</div>
+<div class="topic">
+<div class="about"><h3>{{value.module}}</h3></div>
+<!-- <div class="about-heading">Cognitive computing</div> -->
+<div class="ai_para">
+    <p>{{value.desc}}</p>
+</div>
+
+<div class="sub-title">
+    <h3>{{value.subtitle1}}</h3>
+    <p>{{value.desc1}}</p>
+</div>
+<div class="sub-title">
+    <h3>{{value.subtitle2}}</h3>
+    <p>{{value.desc2}}</p>
+</div>
+<div class="sub-title">
+    <h3>{{value.subtitle3}}</h3>
+    <p>{{value.desc3}}</p>
+</div>
+<div class="sub-title">
+    <h3>{{value.subtitle4}}</h3>
+    <p>{{value.desc4}}</p>
+</div>
+<div class="sub-title">
+    <h3>{{value.subtitle5}}</h3>
+    <p>{{value.desc5}}</p>
+</div>
+<div class="sub-title">
+    <h3>{{value.subtitle6}}</h3>
+    <p>{{value.desc6}}</p>
+</div>
+</div>
+<div class="quiz">
+{% if value.module == "Module 4" %}
+<a href="./quiz"><button>Start Quiz</button></a>
+{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form action="#" method="post">
+                <h2>Register</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="email" id="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="password" id="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                  
+                </div>
+                <button type="submit" value="submit">Register</button>
+                <div class="register">
+                    <p>Already have an account?<a href="/login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
